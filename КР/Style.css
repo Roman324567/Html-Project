@@ -72,36 +72,44 @@ table,td,th{
     margin-bottom: 0px;
     font-family: 'Anton', sans-serif;
 }
-@media (min-width: 1200px) {
-    .col-vlg-3 {
-        width: 25%;
-    }
+.main {
+    position: relative;
+    float: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media (min-width: 992px) and (max-width: 1199.99px) {
-    .col-lg-4 {
-        width: 33.33%;
+    @media (min-width: 1200px) {
+        .col-vlg-3 {
+            width: 25%;
+        }
     }
-    .col-lg-12 {
-        width: 100%;
+    
+    @media (min-width: 992px) and (max-width: 1199.99px) {
+        .col-lg-4 {
+            width: 33.33%;
+        }
+        .col-lg-12 {
+            width: 100%;
+        }
     }
-}
-
-@media (min-width: 768px) and (max-width: 991.99px) { 
-    .col-md-6 {
-        width: 50%;
+    
+    @media (min-width: 768px) and (max-width: 991.99px) { 
+        .col-md-6 {
+            width: 50%;
+        }
     }
-}
-
-@media (max-width: 767.99px) {
-    .main{
-        flex-direction: column;
+    
+    @media (max-width: 767.99px) {
+        .main{
+            flex-direction: column;
+        }
+        .col-sm-12 {
+            width: 100%;
+        }
     }
-    .col-sm-12 {
-        width: 100%;
-    }
-}
-    }
+    
 .variant{
     text-align: center;
     font-style: oblique;
